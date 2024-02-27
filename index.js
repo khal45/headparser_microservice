@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
 // your first API endpoint...
 app.get('/api/whoami', (req, res) => {
   res.json({
-    address: req.socket.remoteAddress,
+    ipaddress: req.socket.remoteAddress,
     language: req.headers['accept-language'],
     software: req.headers['user-agent']
   });
